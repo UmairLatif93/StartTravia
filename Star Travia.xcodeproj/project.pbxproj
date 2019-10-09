@@ -12,6 +12,8 @@
 		A610A31F234DE7930073306C /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A610A31C234DE7920073306C /* Starjout.ttf */; };
 		A610A326234DEFFC0073306C /* BlackBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610A325234DEFFC0073306C /* BlackBgView.swift */; };
 		A610A329234DF0320073306C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610A328234DF0320073306C /* Constants.swift */; };
+		A610A32C234E00940073306C /* PersonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610A32B234E00940073306C /* PersonAPI.swift */; };
+		A610A32E234E09CC0073306C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610A32D234E09CC0073306C /* Person.swift */; };
 		A682180E234DE14A00D25B7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A682180D234DE14A00D25B7B /* AppDelegate.swift */; };
 		A6821810234DE14A00D25B7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A682180F234DE14A00D25B7B /* SceneDelegate.swift */; };
 		A6821812234DE14A00D25B7B /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6821811234DE14A00D25B7B /* SelectPersonVC.swift */; };
@@ -26,6 +28,8 @@
 		A610A31C234DE7920073306C /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Starjout.ttf; path = star_jedi/starjout/Starjout.ttf; sourceTree = SOURCE_ROOT; };
 		A610A325234DEFFC0073306C /* BlackBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBgView.swift; sourceTree = "<group>"; };
 		A610A328234DF0320073306C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A610A32B234E00940073306C /* PersonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAPI.swift; sourceTree = "<group>"; };
+		A610A32D234E09CC0073306C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		A682180A234DE14A00D25B7B /* Star Travia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star Travia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A682180D234DE14A00D25B7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A682180F234DE14A00D25B7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 		A610A324234DE7FB0073306C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A610A32D234E09CC0073306C /* Person.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,6 +98,14 @@
 				A610A328234DF0320073306C /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A610A32A234E006D0073306C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A610A32B234E00940073306C /* PersonAPI.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		A6821801234DE14A00D25B7B = {
@@ -120,6 +133,7 @@
 				A682180D234DE14A00D25B7B /* AppDelegate.swift */,
 				A682180F234DE14A00D25B7B /* SceneDelegate.swift */,
 				A6821811234DE14A00D25B7B /* SelectPersonVC.swift */,
+				A610A32A234E006D0073306C /* Services */,
 				A610A327234DF01E0073306C /* Utils */,
 				A610A321234DE7DF0073306C /* Resources */,
 				A6821813234DE14B00D25B7B /* Main.storyboard */,
@@ -208,7 +222,9 @@
 				A6821812234DE14A00D25B7B /* SelectPersonVC.swift in Sources */,
 				A610A326234DEFFC0073306C /* BlackBgView.swift in Sources */,
 				A682180E234DE14A00D25B7B /* AppDelegate.swift in Sources */,
+				A610A32E234E09CC0073306C /* Person.swift in Sources */,
 				A6821810234DE14A00D25B7B /* SceneDelegate.swift in Sources */,
+				A610A32C234E00940073306C /* PersonAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
