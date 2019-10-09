@@ -29,7 +29,7 @@ class SelectPersonVC: UIViewController {
         
         let random = Int.random(in: 1 ... 87)
         
-        personAPI.getRandomPersonUrlSession(id: random) { (person) in
+        personAPI.getRandomPersonAlamo(id: random) { (person) in
             
             if let person = person {
                 

@@ -20,9 +20,13 @@
 		A6821815234DE14B00D25B7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6821813234DE14B00D25B7B /* Main.storyboard */; };
 		A6821817234DE14E00D25B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6821816234DE14E00D25B7B /* Assets.xcassets */; };
 		A682181A234DE14E00D25B7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6821818234DE14E00D25B7B /* LaunchScreen.storyboard */; };
+		A707975CFB733636E7B8BFE4 /* Pods_Star_Travia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3665B2FCCF6A54AD70ADB0 /* Pods_Star_Travia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C3665B2FCCF6A54AD70ADB0 /* Pods_Star_Travia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Star_Travia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BFC6B67CC1D576C89C3A968 /* Pods-Star Travia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Star Travia.release.xcconfig"; path = "Target Support Files/Pods-Star Travia/Pods-Star Travia.release.xcconfig"; sourceTree = "<group>"; };
+		828F5F77999B6EF4BBDEC5AF /* Pods-Star Travia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Star Travia.debug.xcconfig"; path = "Target Support Files/Pods-Star Travia/Pods-Star Travia.debug.xcconfig"; sourceTree = "<group>"; };
 		A610A31A234DE7920073306C /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Starjhol.ttf; path = star_jedi/starjedi/Starjhol.ttf; sourceTree = SOURCE_ROOT; };
 		A610A31B234DE7920073306C /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Starjedi.ttf; path = star_jedi/starjedi/Starjedi.ttf; sourceTree = SOURCE_ROOT; };
 		A610A31C234DE7920073306C /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Starjout.ttf; path = star_jedi/starjout/Starjout.ttf; sourceTree = SOURCE_ROOT; };
@@ -45,12 +49,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A707975CFB733636E7B8BFE4 /* Pods_Star_Travia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		798CB9D4E391DA012F15EB8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C3665B2FCCF6A54AD70ADB0 /* Pods_Star_Travia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A610A320234DE79A0073306C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +126,8 @@
 			children = (
 				A682180C234DE14A00D25B7B /* Star Travia */,
 				A682180B234DE14A00D25B7B /* Products */,
+				F0A0B4F23A1400D0892DF793 /* Pods */,
+				798CB9D4E391DA012F15EB8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +159,16 @@
 			path = "Star Travia";
 			sourceTree = "<group>";
 		};
+		F0A0B4F23A1400D0892DF793 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				828F5F77999B6EF4BBDEC5AF /* Pods-Star Travia.debug.xcconfig */,
+				7BFC6B67CC1D576C89C3A968 /* Pods-Star Travia.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A682181E234DE14E00D25B7B /* Build configuration list for PBXNativeTarget "Star Travia" */;
 			buildPhases = (
+				49EB9B3290BB994C50DFA38C /* [CP] Check Pods Manifest.lock */,
 				A6821806234DE14A00D25B7B /* Sources */,
 				A6821807234DE14A00D25B7B /* Frameworks */,
 				A6821808234DE14A00D25B7B /* Resources */,
+				5E3BE34B59E4A46F8F07EF27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,6 +239,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49EB9B3290BB994C50DFA38C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Star Travia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E3BE34B59E4A46F8F07EF27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Star Travia/Pods-Star Travia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Star Travia/Pods-Star Travia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Star Travia/Pods-Star Travia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6821806234DE14A00D25B7B /* Sources */ = {
@@ -366,6 +435,7 @@
 		};
 		A682181F234DE14E00D25B7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 828F5F77999B6EF4BBDEC5AF /* Pods-Star Travia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,6 +454,7 @@
 		};
 		A6821820234DE14E00D25B7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BFC6B67CC1D576C89C3A968 /* Pods-Star Travia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
