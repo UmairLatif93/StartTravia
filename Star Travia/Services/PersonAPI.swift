@@ -139,7 +139,7 @@ class PersonAPI {
             let hair = json["hair_color"].stringValue
             let birthYear = json["birth_year"].stringValue
             let gender = json["gender"].stringValue
-            let homeWorldURLS = json["homewrold"].stringValue
+            let homeWorldURLS = json["homeworld"].stringValue
             let filmURLS = json["films"].arrayValue.map({$0.stringValue})
             let vehicleURLS = json["vehicles"].arrayValue.map({$0.stringValue})
             let starShipURLS = json["starships"].arrayValue.map({$0.stringValue})
